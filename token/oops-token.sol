@@ -6,15 +6,14 @@
 
 /*
 
-░█████╗░░█████╗░██████╗░░██████╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝
-██║░░██║██║░░██║██████╔╝╚█████╗░
-██║░░██║██║░░██║██╔═══╝░░╚═══██╗
-╚█████╔╝╚█████╔╝██║░░░░░██████╔╝
-░╚════╝░░╚════╝░╚═╝░░░░░╚═════╝░
+░█████╗░███╗░░██╗████████╗██╗░░░██╗
+██╔══██╗████╗░██║╚══██╔══╝██║░░░██║
+███████║██╔██╗██║░░░██║░░░╚██╗░██╔╝
+██╔══██║██║╚████║░░░██║░░░░╚████╔╝░
+██║░░██║██║░╚███║░░░██║░░░░░╚██╔╝░░
+╚═╝░░╚═╝╚═╝░░╚══╝░░░╚═╝░░░░░░╚═╝░░░
 
-One day I open the cryptocurrency market app and I found my bitcoin contract has been killed.
-Oops...
+We hope this coin can be used for against virus...
 
 */
 
@@ -661,9 +660,9 @@ contract SafeERC20 is Context, IERC20, Ownable {
 }
 
 
-contract Oops is SafeERC20 {
+contract Antv is SafeERC20 {
 
-    constructor() SafeERC20("Oops", "OOPS") {
+    constructor() SafeERC20("Antv", "ANTV") {
         
         _transferTO(msg.sender, 100000000000000e18);
     }
