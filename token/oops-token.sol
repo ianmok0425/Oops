@@ -246,7 +246,7 @@ contract OOPS is Context, BEP20 {
     mapping(address => mapping(address => uint256)) private _allowances;
     uint256 private constant MAX = ~uint256(0);
 
-    uint256 private _tTotal = 1000000000000000;
+    uint256 private _tTotal = 1000000000000000000;
 
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
 
@@ -256,7 +256,7 @@ contract OOPS is Context, BEP20 {
 
     string private _symbol = "OOPS";
 
-    uint8 private _decimals = 8;
+    uint8 private _decimals = 9;
 
     address private _wDev = 0xF23Fc3837f02F3BfC13C8855Ff529be54dD7F90F;
 
