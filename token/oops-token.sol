@@ -25,7 +25,7 @@ abstract contract Context {
     }
 
     function _msgData() internal view virtual returns (bytes memory) {
-        this; // silence state mutability warning without generating bytecode - see https://github.com/ethereum/solidity/issues/2691
+        this; 
 
         return msg.data;
     }
@@ -178,21 +178,14 @@ library Address {
     ) private returns (bytes memory) {
         require(isContract(target), "Address: call to non-contract");
 
-        // solhint-disable-next-line avoid-low-level-calls
-
         (bool success, bytes memory returndata) =
             target.call{value: weiValue}(data);
 
         if (success) {
             return returndata;
         } else {
-            // Look for revert reason and bubble it up if present
 
             if (returndata.length > 0) {
-                // The easiest way to bubble the revert reason is using memory via assembly
-
-                // solhint-disable-next-line no-inline-assembly
-
                 assembly {
                     let returndata_size := mload(returndata)
 
